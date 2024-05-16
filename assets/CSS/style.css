@@ -246,4 +246,96 @@ button:hover {
     .social-media i{
         font-size: 30px;
     }
+    
+}
+
+.certifications {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.certification-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.certification-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 400px; 
+    max-width: 350px; 
+    border: 1px solid rgb(53, 53, 53);
+    transition: 0.5s linear;
+}
+
+.certification-card:hover{
+    transform: scale(1.035);
+}
+
+.certification-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.certification-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+    .certification-card {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .certifications{
+        margin-top: 30px;
+    }
+    .certification-card {
+        width: calc(100% - 20px); 
+    }
+}
+
+.contain-img {
+    width: 100%; 
+    height: 250px;
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 025px auto;
+}
+
+.contain-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.certifications h1 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
